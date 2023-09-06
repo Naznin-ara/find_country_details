@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css"  rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Country guide</title>
+</head>
+<body class="bg-gray-700 min-h-screen relative" id="body">
+
+
+    <div class="w-[80%] fixed top-[50%] left-[70%] -translate-x-[50%] -translate-y-[50%]">
+        <div class="relative bg-white w-[40%] py-6 rounded-lg">
+            <div class="absolute inset-y-0 left-2 flex items-center pl-3 pointer-events-none">
+                <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+                </svg>
+            </div>
+            <input type="search" id="search" class="block w-[330px] ml-4 p-4 pl-10 text-sm text-gray-900 border-t-0 border-x-0 border-b-2 border-[#3d64e6] rounded-sm bg-white focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Enter the country name here.." required>
+            <button type="submit" onclick="findCountryDetail()" class="text-white absolute right-[0.625rem] bottom-[1.625rem] bg-blue-700  font-medium rounded-full text-sm px-4 py-2 focus:border-0" data-modal-target="medium-modal" data-modal-toggle="medium-modal">Search</button>
+        </div>
+ <!-- data-modal-target="medium-modal" data-modal-toggle="medium-modal" -->
+    
+    </div>
+ 
+        <div id="medium-modal" tabindex="-1" class=" fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+           
+        </div>
+       
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script> 
+    <script src="file.js"></script>
+</body>
+</html>
